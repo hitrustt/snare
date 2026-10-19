@@ -1,0 +1,107 @@
+{
+  "dataset": {
+    "customers": 15000,
+    "days": 100,
+    "transactions": 2040105,
+    "fraud_transactions": 6304
+  },
+  "split": {
+    "train_days": "14-70",
+    "valid_days": "70-85",
+    "test_days": "85-100"
+  },
+  "operating_point": {
+    "target_false_positive_rate": 0.005,
+    "threshold": 4.705728316173414e-05
+  },
+  "model": {
+    "transactions": 366213,
+    "fraud_transactions": 1025,
+    "fraud_rate": 0.0028,
+    "pr_auc": 0.9198,
+    "roc_auc": 0.9954,
+    "false_positive_rate": 0.0049,
+    "recall": 0.9463,
+    "precision": 0.3516,
+    "dollar_recall": 0.9525,
+    "attacks_caught": 0.9823,
+    "recall_by_type": {
+      "account_takeover": 1.0,
+      "card_testing": 0.9973,
+      "fraud_ring": 0.9895,
+      "skimmed_card": 0.7222
+    }
+  },
+  "rules_baseline": {
+    "transactions": 366213,
+    "fraud_transactions": 1025,
+    "fraud_rate": 0.0028,
+    "pr_auc": 0.0228,
+    "roc_auc": 0.6428,
+    "false_positive_rate": 0.01101,
+    "recall": 0.2966,
+    "precision": 0.0703,
+    "dollar_recall": 0.2223,
+    "attacks_caught": 0.4248,
+    "recall_by_type": {
+      "account_takeover": 0.198,
+      "card_testing": 0.7418,
+      "fraud_ring": 0.0316,
+      "skimmed_card": 0.0111
+    }
+  },
+  "without_graph_features": {
+    "transactions": 366213,
+    "fraud_transactions": 1025,
+    "fraud_rate": 0.0028,
+    "pr_auc": 0.8961,
+    "roc_auc": 0.9954,
+    "false_positive_rate": 0.00459,
+    "recall": 0.9317,
+    "precision": 0.3631,
+    "dollar_recall": 0.9388,
+    "attacks_caught": 0.9646,
+    "recall_by_type": {
+      "account_takeover": 0.9901,
+      "card_testing": 0.9945,
+      "fraud_ring": 0.9711,
+      "skimmed_card": 0.6889
+    }
+  },
+  "feature_importance_gain": {
+    "device_known_min_log": 1798301.3,
+    "speed_from_last_kmh_log": 545418.6,
+    "amount_log": 182038.3,
+    "device_accounts": 165081.7,
+    "address_accounts": 160088.3,
+    "km_from_home_log": 56944.1,
+    "card_small_10m": 45574.3,
+    "amount_vs_card": 44061.3,
+    "store_speed_kmh_log": 39930.9,
+    "card_history_log": 35738.4,
+    "ip_known_min_log": 31662.1,
+    "category": 30619.8,
+    "address_known_min_log": 29527.6,
+    "account_age_days_log": 28714.6,
+    "hour": 28257.2,
+    "secs_since_last_log": 25430.0,
+    "hour_unusual": 25382.8,
+    "card_sum_1h_log": 18953.5,
+    "km_from_last_log": 15637.7,
+    "amount_vs_category": 14780.4,
+    "category_share": 10174.4,
+    "ring_size": 9576.1,
+    "card_count_24h": 4936.7,
+    "card_count_1h": 3342.4,
+    "new_merchant": 3330.6,
+    "foreign": 2530.8,
+    "ip_cards_1h": 2420.0,
+    "ring_new_accounts": 1906.1,
+    "card_merchants_1h": 1595.9,
+    "card_count_10m": 411.0,
+    "new_category": 370.0,
+    "online": 113.1,
+    "card_count_2m": 77.4
+  },
+  "trees": 1441
+}

@@ -1,0 +1,17 @@
+[project]
+name = "snare"
+version = "1.0.0"
+description = "Real-time fraud detection on a live, simulated payment network"
+requires-python = ">=3.12"
+
+[tool.ruff]
+line-length = 160
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "C4", "RUF"]
+ignore = ["E501", "B905", "SIM108", "RUF001", "RUF002", "RUF003"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning:fastapi.testclient", "ignore:Using `httpx`"]
