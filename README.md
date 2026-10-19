@@ -6,6 +6,9 @@ every payment as it happens, and you can attack the network yourself: launch
 card testing, an account takeover, a cloned card or a fraud ring, and watch
 the model catch it and explain why.
 
+Live at **https://snare-qc4s.onrender.com** (the free server sleeps when idle, so
+the first visit can take a minute to wake it).
+
 ![Snare](./docs/screenshot.png)
 
 <img src="./docs/screenshot-mobile.png" alt="Mobile" width="300" />
